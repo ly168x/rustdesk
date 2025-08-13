@@ -99,7 +99,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
           if (data.hasData) {
             if (isIncomingOnly) {
               if (isInHomePage()) {
-                Future.delayed(Duration(milliseconds: 100), () {
+                Future.delayed(Duration(milliseconds: 300), () {
                   _updateWindowSize();
                 });
               }
@@ -118,7 +118,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
         OnlineStatusWidget(
           onSvcStatusChanged: () {
             if (isInHomePage()) {
-              Future.delayed(Duration(milliseconds: 100), () {
+              Future.delayed(Duration(milliseconds: 300), () {
                 _updateWindowSize();
               });
             }
